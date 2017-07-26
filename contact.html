@@ -10,10 +10,10 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
-<body>
+<body style="padding-bottom: 70px;">
 <!--Header for NavBar-->
 	<header class="container">
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -40,45 +40,66 @@
 	<div class="container">
 		<!--Row for About Me-->
 		<div class="row">
-			<!--Column for Space-->
-			<div class="col-md-1">
-			</div>
-			<!--Column for About Me-->
-			<div class="col-md-6">
+			<!--Column for About Me--> <!--Edit for Responsivenes-->
+			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 				<!--Panel for containing About Me section-->
 				<div class="panel panel-default">
 				  <div class="panel-heading">
 				    <h3 class="panel-title">About Me</h3>
 				  </div>
 				  <div class="panel-body">
-				    <p>The year was 1986. He was a teenager like any other: dreaming of his heroes and in love with a girl.</p>
-				    <p>But on a thunderous night along a ragged coast a mysterious wrecked car came to him. Its power lighting his eyes blood red.</p>
-				    <p>In a flash, all was lost in a hellfire of twisted metal.</p>
-				    <p>When our hero emerged from the burning wreckage, he and the car had become one - their souls spliced forever - leaving him to wander the night alone, invisible to everyone...but <a href=https://youtu.be/t1s7L8gQMbs alt="youtube link to great video" target="_blank">her</a>.</p>
+				  	<!--Row and columns for About Me material-->
+				  	<row>
+						<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+						    <form>
+						      <div class="form-group">
+						        <label for="Name">Name</label>
+						        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
+						      </div>
+						      <div class="form-group">
+						        <label for="Email Address">Email address</label>
+						        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+						      </div>
+						      <div class="form-group">
+						        <label for="Message">Message</label>
+						        <input type="email" class="form-control input-lg" id="exampleInputEmail1" placeholder="Message">
+						      </div>
+						      <button type="submit" class="btn btn-default">Submit</button>
+						    </form>
+						</div>
+				    </row>
 				  </div>
 				</div>
 			</div>
-			<!--Column for Space-->
-			<div class="col-md-1">
-			</div>
-			<!--Column for Connect With Me-->
-			<div class="col-md-3">
+			<!--Column for Connect With Me--><!--Edit for Responsivenes-->
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				<!--Panel for containing Connect With Me section-->
 				<div class="panel panel-default">
 				  <div class="panel-heading">
 				    <h3 class="panel-title">Connect With Me</h3>
 				  </div>
 				  <div class="panel-body">
-				    Wonderful Links
+				  	<!--Row and columns for Connect With Me Icons-->
+				  	<row>
+				  		<div class="col-lg-4 col-md-4 col-sm-2 col-xs-2">
+					    	<a href="https://www.linkedin.com/in/benjamin-rodriguez" target="_blank"><img src="images/linkedInLogo.png" class="img-responsive img-thumbnail" alt="Responsive image"></a>
+					    </div>
+					    <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2">
+					    	<a href="https://github.com/BIMATN" target="_blank"><img src="images/gitHubLogo.png" class="img-responsive img-thumbnail" alt="Responsive image"></a>
+					    </div>
+					    <div class="col-lg-4 col-md-4 col-sm-2 col-xs-2">
+					    	<a href="https://stackexchange.com/users/11153459/bimatn" target="_blank"><img src="images/stackOverflowLogo.png" class="img-responsive img-thumbnail" alt="Responsive image"></a>
+					    </div>
+					</row>
 				  </div>
 				</div>
 			</div>
 			<!--Column for Space-->
-			<div class="col-md-1">
+			<div class="col-lg-1">
 			</div>
 		</div>
 		<!--Footer-->
-		<div class="panel-footer">
+		<div class="panel-footer navbar-fixed-bottom">
 			<p class="text-center">Copyright 2017 Benjamin Rodriguez</p>
 		</div>
 	</div>
