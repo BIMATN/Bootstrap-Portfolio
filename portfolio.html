@@ -26,6 +26,9 @@
 	.imageSize {
 		height: 200px;
 	}
+	.text{
+		color: lightyellow !important;
+	}
 	/* This CSS is from https://codepen.io/luisintosh/pen/gPGXOp - I did modify just a little*/
 	.imagebox {
 	  background: black;
@@ -49,7 +52,7 @@
 <body style="padding-bottom: 70px;">
 <!--Header for NavBar-->
 	<header class="container">
-		<nav class="navbar navbar-default navbar">
+		<nav class="navbar-inverse navbar-default navbar">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -59,14 +62,14 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="index.html">Benjamin Rodriguez</a>
+		      <a class="navbar-brand text" href="index.html">Benjamin Rodriguez</a>
 		    </div>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="index.html">About</a></li>
-		        <li><a href="portfolio.html">Portfolio</a></li>
-		        <li><a href="contact.html">Contact</a></li>
+		        <li><a href="index.html" class="text">About</a></li>
+		        <li><a href="portfolio.html" class="text">Portfolio</a></li>
+		        <li><a href="contact.html" class="text">Contact</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -81,7 +84,7 @@
 				<!--Panel for containing Portfolio section-->
 				<div class="panel panel-default">
 				  <div class="panel-heading">
-				    <h3 class="panel-title">Portfolio</h3>
+				    <h3 class="panel-title" style="font-weight: bold">Portfolio</h3>
 				  </div>
 				  <div class="panel-body">
 				  	<!--Row and columns for Portfolio material-->
@@ -135,7 +138,7 @@
 				<!--Panel for containing Connect With Me section-->
 				<div class="panel panel-default">
 				  <div class="panel-heading">
-				    <h3 class="panel-title">Connect With Me</h3>
+				    <h3 class="panel-title" style="font-weight: bold">Connect With Me</h3>
 				  </div>
 				  <div class="panel-body">
 				  	<!--Row and columns for Connect With Me Icons-->
@@ -155,8 +158,8 @@
 			</div>
 		</div>
 		<!--Footer-->
-		<div class="panel-footer navbar-fixed-bottom">
-			<p class="text-center">Copyright 2017 Benjamin Rodriguez</p>
+		<div class="panel-footer navbar-fixed-bottom navbar-inverse">
+			<p class="text-center text">Copyright 2017 Benjamin Rodriguez</p>
 		</div>
 	</div>
 </body>
