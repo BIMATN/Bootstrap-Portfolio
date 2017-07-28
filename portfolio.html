@@ -11,14 +11,39 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
 <style>
-	.portfolio {
-		width:249px;
-		height:140px;
-		padding: 10px;
+	body {
+		background-image: url("images/debut_light.png");
 	}
-	.portfolio4x3 {
-		width:140px;
-		height:140px;
+	.container {
+		background-image: url("images/stardust.png");	
+	}
+	.panel-body {
+		background-image: url("images/old_moon.png");
+	}
+	.navbar-text {
+		color: red;
+	}
+	.imageSize {
+		height: 200px;
+	}
+	/* This CSS is from https://codepen.io/luisintosh/pen/gPGXOp - I did modify just a little*/
+	.imagebox {
+	  background: black;
+	  padding: 0px;
+	  position: relative;
+	  text-align: center;
+	  width: 100%;
+	}
+	.imageBox .imageBox-Desc {
+	  background-color: rgba(0, 0, 0, 0.6);
+	  bottom: 30px;
+	  color: white;
+	  font-size: 1.2em;
+	  padding: 10px 15px;
+	  position: absolute;
+	  left: 0%;
+	  text-align: center;
+	  width: 100%;
 	}
 </style>
 <body style="padding-bottom: 70px;">
@@ -62,26 +87,44 @@
 				  	<!--Row and columns for Portfolio material-->
 				  	<div class="row">
 				  		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						  	<img src="images/spiralGalaxy.gif" class="img-responsive img-thumbnail center-block portfolio4x3" alt="Responsive image">
+				  			<div class="imageBox">	
+						  		<img src="images/spiralGalaxy.gif" class="img-responsive imageSize center-block" alt="Responsive image">
+						  		<span class="imageBox-Desc">Spiral Galaxy</span>
+						  	</div>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<img src="images/earth.jpg" class="img-responsive img-thumbnail center-block portfolio" alt="Responsive image">
+							<div class="imageBox">
+								<img src="images/earth.jpg" class="img-responsive imageSize center-block" alt="Responsive image">
+								<span class="imageBox-Desc">Earth</span>
+							</div>
 						</div>
 				    </div>
-			      	<div class= "row">
+			      	<div class= "row" style="margin-top: 20px">
 			      		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-			    		  	<img src="images/nebula.jpg" class="img-responsive img-thumbnail center-block portfolio" alt="Responsive image">
+			      			<div class="imageBox">
+			    		  		<img src="images/nebula.jpg" class="img-responsive imageSize center-block" alt="Responsive image">
+			    		  		<span class="imageBox-Desc">Nebula</span>
+			    		  	</div>
 			    		</div>
 			    		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-			    			<img src="images/blackHole.jpg" class="img-responsive img-thumbnail center-block portfolio" alt="Responsive image">
+			    			<div class="imageBox">
+			    				<img src="images/blackHole.jpg" class="img-responsive imageSize center-block" alt="Responsive image">
+			    				<span class="imageBox-Desc">Black Hole</span>
+			    			</div>
 			    		</div>
 			        </div>
-			       	<div class="row">
+			       	<div class="row" style="margin-top: 20px">
 			       		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-			     		  	<img src="images/car1.jpg" class="img-responsive img-thumbnail center-block portfolio" alt="Responsive image">
+			       			<div class="imageBox">
+			     		  		<img src="images/car1.jpg" class="img-responsive imageSize center-block" alt="Responsive image">
+			     		  		<span class="imageBox-Desc">Neon Car</span>
+			     		  	</div>
 			     		</div>
 			     		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-			     			<img src="images/carCity.jpg" class="img-responsive img-thumbnail center-block portfolio" alt="Responsive image">
+			     			<div class="imageBox">
+			     				<img src="images/carCity.jpg" class="img-responsive imageSize center-block" alt="Responsive image">
+			     				<span class="imageBox-Desc">Retro City</span>
+			     			</div>
 			     		</div>
 			         </div>
 				  </div>
